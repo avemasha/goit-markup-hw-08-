@@ -1,0 +1,76 @@
+.nav-list__item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-list__link {
+  position: relative;
+}
+
+.nav-list__link.current {
+  color: $accent-color;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.site-nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list__item + .nav-list__item {
+  margin-left: 50px;
+}
+
+.contacts-list {
+  display: flex;
+
+  margin-left: auto;
+}
+
+.contacts-list__item + .contacts-list__item {
+  margin-left: 50px;
+}
+
+.nav-list__item {
+  padding-top: 32px;
+}
+.nav-list__item + .nav-list__item {
+  margin-left: 50px;
+}
+
+.nav-list__link,
+.section__title {
+  color: $title-text-color;
+}
+.nav-list__link {
+  font-family: "Roboto", sans-serif;
+
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

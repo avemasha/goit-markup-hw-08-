@@ -1,0 +1,37 @@
+.occupation {
+  padding-top: 0;
+}
+.work-list {
+  display: flex;
+}
+.work-list__image {
+  left: 215px;
+  top: 1061px;
+}
+.work-list__item + .work-list__item {
+  margin-left: 30px;
+}
+
+.work-list__overlay {
+  position: relative;
+}
+
+.work-list__backdrop {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: $image-overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-list__overlay-paragraph {
+  color: $main-background-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+
+  letter-spacing: 0.03em;
+}

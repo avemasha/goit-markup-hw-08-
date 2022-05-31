@@ -1,25 +1,8 @@
-@import "./utils/variables";
-@import "./components/page-header";
-@import "./components/logo";
+@import './utils/variables';
+@import './base/container';
+@import './base/normalize';
+@import './utils/breakpoints';
 
-@import "./components/base/common";
-@import "./components/container";
 
-@import "./components/nav";
-@import "./components/contacts";
-@import "./components/hero";
-@import "./components/buttons";
-@import "./components/work";
-@import "./components/clients";
-@import "./components/staff";
-@import "./components/features";
-
-@import "./components/projects";
-@import "./components/footer";
-
-@import "./components/footerform";
-@import "./components/backdrop";
-@import "./components/modal";
-
-@import "./components/base/normalize.scss";
-@import "./utils/breakpoints";
+@import './desktop/components/desktop-styles';
+@import './mobile/components/mobile-styles';

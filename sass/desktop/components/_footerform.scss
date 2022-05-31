@@ -1,4 +1,5 @@
-.footer-form {
+@media screen and (min-width: $desktop) {
+  .footer-form {
   margin-left: auto;
 }
 
@@ -42,4 +43,5 @@
 .send-icon {
   fill: $main-background-color;
   margin-left: 10px;
+}
 }

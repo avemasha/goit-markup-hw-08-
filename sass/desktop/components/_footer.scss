@@ -1,5 +1,7 @@
-.footer {
+@media screen and (min-width: 1140px) {
+  .footer {
   background-color: $hero-footer-background-color;
+  
 
   padding-top: 60px;
 
@@ -76,4 +78,5 @@
 
 .adress-list__item + .adress-list__item {
   margin-top: 9px;
+}
 }

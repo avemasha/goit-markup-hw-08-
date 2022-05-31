@@ -1,3 +1,5 @@
+
+@media screen and (min-width: $desktop) {
 .contacts-list {
   display: flex;
   align-items: center;
@@ -37,4 +39,5 @@
 
 .icon-contact {
   margin-right: 10px;
+}
 }

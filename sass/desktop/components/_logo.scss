@@ -1,4 +1,5 @@
-.logo {
+@media screen and (min-width: $desktop) {
+  .logo {
   color: $logo-web-color;
   font-family: "Raleway";
   padding-top: 24px;
@@ -14,4 +15,5 @@
 
 .footer__logo-studio {
   color: $main-background-color;
+}
 }

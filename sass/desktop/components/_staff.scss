@@ -1,4 +1,5 @@
-.our-team {
+@media screen and (min-width: $desktop) {
+  .our-team {
   background-color: $staff-background-color;
 }
 
@@ -77,4 +78,5 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }

@@ -72,37 +72,32 @@
   justify-content: space-between;
 }
 
-.site-nav__menu-button {
+.menu-open-btn {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
 }
-
-.site-nav__menu-button .icon-close {
-  display: none;
-  position: absolute;
-}
-
-.site-nav__menu-button.is-open .icon-close {
+.menu-close-btn {
   display: block;
-}
-
-.site-nav__menu-button.is-open .icon-menu {
-  display: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
 }
 
 .menu-container {
   display: none;
   position: relative;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   // height: 796px;
   background-color: $main-background-color;
-  padding: 48px 40px;
+  padding: 10px 15px 48px 40px;
 
   &.is-open {
     display: block;

@@ -13,7 +13,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
 
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
 </head>
 
 <body>
@@ -23,15 +23,21 @@
     <div class="container">
         <nav class="site-nav">
             <a href="./index.html" class="logo link"><span class="logo__web">Web</span>Studio</a>
-         <button class="site-nav__menu-button " type="button" aria-expanded="false" data-menu-button><svg width="40" height="40" aria-label="Переключатель мобильного меню">
+         <button class="menu-open-btn" type="button"  data-menu-button><svg width="40" height="40" aria-label="Переключатель мобильного меню">
              <use class="icon-menu"  href="images/symbol-defs7.svg#icon-menu"></use>
-            <use class="icon-close" href="images/symbol-defs7.svg#icon-close"></use>
-      
+           
             
       
     </button>
-    <div class="menu-container" data-menu>
-      
+    <div class="menu-container " data-menu >
+        <button class="menu-close-btn" type="button" data-menu-button><svg width="40" height="40"
+                aria-label="Переключатель мобильного меню">
+                
+                <use class="icon-close" href="images/symbol-defs7.svg#icon-close"></use>
+        
+        
+        
+        </button>
             <ul  class="nav-list list" id="navigation">
                 <li class="nav-list__item"><a href="./studio.html" class="nav-list__link link current">Студия</a></li>
                 <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link">Портфолио</a></li>

@@ -1,0 +1,48 @@
+.footer-form {
+  margin-left: auto;
+  margin-top: 60px;
+}
+
+// .footer-form-field {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.footer-form__label {
+  color: $main-background-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  margin-left: 115px;
+  margin-right: 115px;
+}
+
+.footer-form__input {
+  width: 450px;
+  background-color: $hero-footer-background-color;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: $main-background-color;
+  margin-top: 20px;
+
+  &::placeholder {
+    color: $contacts-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+}
+
+// .mail-field-button {
+//   display: flex;
+// }
+
+.send-icon {
+  fill: $main-background-color;
+  margin-left: 10px;
+}

@@ -1,4 +1,36 @@
-.nav-list{
-    display: none;
+.nav-list {
+  display: none;
+}
+.contacts-list {
+  display: none;
+}
 
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav__menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.site-nav__menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.site-nav__menu-button .icon-close {
+  display: none;
+}
+
+.site-nav__menu-button.is-open .icon-close {
+  display: block;
 }

@@ -88,6 +88,10 @@
   margin-left: auto;
 }
 
+.icon-menu:hover,
+.icon-close:hover {
+  fill: $accent-color;
+}
 .menu-container {
   display: none;
   position: relative;

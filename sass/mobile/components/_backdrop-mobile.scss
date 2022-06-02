@@ -29,10 +29,14 @@
 
 .modal {
   position: absolute;
-  position: relative;
+  left: 50%;
+  top: 50%;
 
-  width: 450px;
-  height: 609px;
+  position: relative;
+  padding: 40px;
+
+  min-width: 450px;
+  min-height: 609px;
 
   background-color: $main-background-color;
   transform: translate(-50%, -50%) scale(1);

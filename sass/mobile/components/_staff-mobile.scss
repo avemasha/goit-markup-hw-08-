@@ -8,20 +8,34 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
-}
-// .members {
-//   //   display: flex;
 
-//   margin-top: 50px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 24px;
+    // display: flex;
+    // flex-wrap: wrap;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+.members {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+// .members__card + .members__card {
+//   margin-top: 30px;
 // }
-
-.members__card + .members__card {
-  margin-top: 30px;
-}
 
 .members__image {
   width: 450px;
   height: 460px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
 }
 .members__name {
   margin-top: 30px;

@@ -27,13 +27,19 @@
 
 .portfoilio-button-list {
   display: flex;
-  justify-content: center;
-
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 3 * 8px) / 3);
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.portfoilio-button-list__item + .portfoilio-button-list__item {
-  margin-left: 8px;
+.portfoilio-button-list__item {
+  margin: 4px;
 }
 .portfoilio-button-list__button {
   cursor: pointer;

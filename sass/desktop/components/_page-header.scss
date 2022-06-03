@@ -3,4 +3,16 @@
   border-bottom: 1px solid #ececec;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1140px) {
+    width: 1140px;
+  }
 }

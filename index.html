@@ -21,16 +21,44 @@
 
     <header class="page-header">
     <div class="container">
+        <div class="mobile-nav">
+        <a href="./index.html" class="logo link"><span class="logo__web">Web</span>Studio</a>
+        <button class="menu-open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button"
+            data-menu-button><svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="images/symbol-defs7.svg#icon-menu"></use>
+        
+        
+        
+        </button>
+        </div>
         <nav class="site-nav">
             <a href="./index.html" class="logo link"><span class="logo__web">Web</span>Studio</a>
-         <button class="menu-open-btn" type="button"  data-menu-button><svg width="40" height="40" aria-label="Переключатель мобильного меню">
-             <use class="icon-menu"  href="images/symbol-defs7.svg#icon-menu"></use>
-           
-            
-      
-    </button>
-    <div class="menu-container " data-menu >
-        <button class="menu-close-btn" type="button" data-menu-button><svg width="40" height="40"
+    <ul class="nav-list list" id="navigation">
+        <li class="nav-list__item"><a href="./studio.html" class="nav-list__link current link">Студия</a></li>
+        <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link">Портфолио</a></li>
+        <li class="nav-list__item"><a href="" class="nav-list__link link">Контакты</a></li>
+    </ul>
+    
+    <ul class="contacts-list list">
+        <li class="contacts-list__item mail"><a href="mailto:info@devstudio.com" class="contacts-list__link link"><svg
+                    class="icon-contact" width="16" height="12">
+                    <use href="./images/symbol-defs2.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a></li>
+        <li class="contacts-list__item phone"><a href="tel:+380961111111" class="contacts-list__link link"><svg
+                    class="icon-contact" width="10" height="16">
+                    <use href="./images/symbol-defs2.svg#icon-smartphone"></use>
+                </svg> +38 096 111 11 11</a></li>
+    </ul>
+    <ul class="source-links list">
+        <li class="source-links__item"><a href="" class="source-links__link link">Instagram</a></li>
+        <li class="source-links__item"><a href="" class="source-links__link link">Twitter</a></li>
+        <li class="source-links__item"><a href="" class="source-links__link link">Facebook</a></li>
+        <li class="source-links__item"><a href="" class="source-links__link link">LinkedIn</a></li>
+    </ul>
+    </nav>  
+    <div class="menu-container js-menu-container" id="mobile-menu "  data-menu >
+        <button class="menu-close-btn js-close-menu" type="button" data-menu-button><svg width="40" height="40"
                 aria-label="Переключатель мобильного меню">
                 
                 <use class="icon-close" href="images/symbol-defs7.svg#icon-close"></use>
@@ -56,7 +84,7 @@
             <li class="source-links__item"><a href="" class="source-links__link link">LinkedIn</a></li>
         </ul>
     </div>
-</nav>
+
     </header>
     
     <main>
@@ -267,6 +295,7 @@
     
     <footer class="footer">
         <div class="container footer__container">
+      <div class="tab-info">
             <div class="info">
         <a href="./index.html" class="logo link"><span class="logo__web">Web</span><span class="footer__logo-studio">Studio</span></a>
         <address>
@@ -295,6 +324,8 @@
             </ul>
 
 
+       
+        </div>
         </div>
         <form action="-" class="footer-form">
             <div class="footer-form-field">
@@ -371,7 +402,7 @@
 
     </div>
 <script src="./js/modal.js"></script>
-<script src="./js/menu.js"></script>
+<script defer src="./js/menu.js"></script>
 </body>
 
 

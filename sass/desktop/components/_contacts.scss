@@ -1,8 +1,9 @@
-
-@media screen and (min-width: $desktop) {
 .contacts-list {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1140px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .contacts-list__link {
   color: $primary-text-color;
@@ -39,5 +40,4 @@
 
 .icon-contact {
   margin-right: 10px;
-}
 }

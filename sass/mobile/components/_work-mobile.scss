@@ -1,3 +1,7 @@
-.occupation {
+.work-list {
   display: none;
+
+  @media screen and (min-width: 1140px) {
+    display: flex;
+  }
 }

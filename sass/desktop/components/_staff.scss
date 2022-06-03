@@ -1,5 +1,4 @@
-@media screen and (min-width: $desktop) {
-  .our-team {
+.our-team {
   background-color: $staff-background-color;
 }
 
@@ -10,66 +9,85 @@
   border-radius: 0px 0px 4px 4px;
 }
 .members {
-  display: flex;
-
-  margin-top: 50px;
+  @media screen and (min-width: 1140px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+  }
 }
 
 .members__card + .members__card {
-  margin-left: 30px;
+  @media screen and (min-width: 1140px) {
+    margin-left: 30px;
+  }
 }
 .members__name {
-  margin-top: 30px;
-  text-align: center;
-  min-width: 137px;
+  @media screen and (min-width: 1140px) {
+    margin-top: 30px;
+    text-align: center;
+    min-width: 137px;
+  }
 }
 .members__position {
-  margin-bottom: 10px;
-  text-align: center;
+  @media screen and (min-width: 1140px) {
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
+
 .members__name {
-  color: $title-text-color;
-  font-weight: 500;
+  @media screen and (min-width: 1140px) {
+    color: $title-text-color;
+    font-weight: 500;
 
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
 }
 
 .members__position {
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-  margin-top: 10px;
+  @media screen and (min-width: 1140px) {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    margin-top: 10px;
+  }
 }
 .member-source {
-  display: flex;
-  margin-bottom: 30px;
-  margin-top: 16px;
-  justify-content: center;
+  @media screen and (min-width: 1140px) {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    justify-content: center;
+  }
 }
 .member-source__item + .member-source__item {
-  margin-left: 10px;
+  @media screen and (min-width: 1140px) {
+    margin-left: 10px;
+  }
 }
 .member-source__item {
-  display: block;
-  width: 44px;
-  height: 44px;
-  background-color: $main-background-color;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1140px) {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: $main-background-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    background-color: $accent-color;
+    &:hover {
+      background-color: $accent-color;
 
-    &:hover .member-source__icon {
-      fill: $main-background-color;
+      &:hover .member-source__icon {
+        fill: $main-background-color;
+      }
     }
   }
 }
@@ -78,5 +96,4 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 }

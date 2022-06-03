@@ -35,6 +35,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   align-items: center;
+  @media screen and (min-width: 1140px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
@@ -44,6 +48,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1140px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
 }
 
 .container {

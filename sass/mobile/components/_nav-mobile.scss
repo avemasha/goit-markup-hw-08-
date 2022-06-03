@@ -81,6 +81,13 @@
     margin-top: 0;
     margin-left: auto;
   }
+  @media screen and (min-width: 1140px) {
+    flex-direction: row;
+
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+  }
 }
 
 .contacts-list__item + .contacts-list__item {
@@ -96,7 +103,7 @@
   }
 }
 .icon-contact {
-  display: none;
+  display: block;
 }
 
 .phone .contacts-list__link {

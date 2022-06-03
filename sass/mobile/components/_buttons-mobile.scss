@@ -95,6 +95,9 @@
   &:hover {
     background-color: $button-hover;
   }
+  @media screen and (min-width: 1140px) {
+    margin-left: 12px;
+  }
 }
 
 .modal__hide-button {

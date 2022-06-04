@@ -1,17 +1,9 @@
-.features {
-  background-color: $main-background-color;
-}
-.features-list {
-  display: flex;
-}
-
-.features-list__item {
-  @media screen and (min-width: 1140px) {
-    // margin-left: 10px;
-
-    width: 270px;
-  }
-}
+// .features {
+//   background-color: $main-background-color;
+// }
+// .features-list {
+//   display: flex;
+// }
 
 .features-list__title {
   color: $title-text-color;

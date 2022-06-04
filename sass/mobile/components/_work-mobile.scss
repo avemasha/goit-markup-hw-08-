@@ -1,3 +1,10 @@
+.occupation .section__title {
+  display: none;
+
+  @media screen and (min-width: 1140px) {
+    display: block;
+  }
+}
 .work-list {
   display: none;
 

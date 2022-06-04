@@ -36,6 +36,12 @@
     align-items: center;
     justify-content: center;
   }
+  @media screen and (min-width: 1140px) {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .portfoilio-button-list__item {

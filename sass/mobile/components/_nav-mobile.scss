@@ -12,6 +12,10 @@
     display: flex;
     margin-left: 88px;
   }
+  @media screen and (min-width: 1140px) {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 .nav-list__link {
   color: $title-text-color;
@@ -26,20 +30,27 @@
     font-size: 12px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    // padding-bottom: 32px;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding-bottom: 32px;
 
     &:hover,
     &:focus {
       color: $accent-color;
+    }
+    @media screen and (min-width: 1140px) {
+      padding-bottom: 32px;
     }
   }
 }
 .nav-list__item {
   @media screen and (min-width: 768) {
     padding-top: 32px;
+  }
+  @media screen and (min-width: 1140px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .nav-list__item + .nav-list__item {
@@ -49,6 +60,17 @@
     margin-top: 0;
   }
 }
+
+.nav-list__link {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    position: relative;
+  }
+  @media screen and (min-width: 1140px) {
+    position: relative;
+  }
+}
+
 .nav-list__link.current {
   color: $accent-color;
 
@@ -68,6 +90,7 @@
 
     @media screen and (min-width: 768px) {
       display: block;
+      content: "";
     }
   }
 }
@@ -76,6 +99,8 @@
   margin-top: 302px;
   display: flex;
   flex-direction: column-reverse;
+  align-items: flex-start;
+  margin-left: 84px;
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
@@ -83,7 +108,7 @@
   }
   @media screen and (min-width: 1140px) {
     flex-direction: row;
-
+    margin-left: 305px;
     display: flex;
     flex-direction: row;
     margin-right: auto;
@@ -95,6 +120,10 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1140px) {
+    margin-left: 30px;
   }
 }
 .nav .contacts-list__link + .contacts-list__item {
@@ -112,6 +141,7 @@
   font-size: 34px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  margin-bottom: 10px;
 
   @media screen and (min-width: 768px) {
     color: $primary-text-color;
@@ -120,6 +150,8 @@
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    padding-bottom: 0;
+    padding-top: 21px;
   }
 }
 
@@ -137,6 +169,8 @@
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    padding-bottom: 21px;
+    padding-top: 0;
   }
 }
 
@@ -182,6 +216,8 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .menu-close-btn {
   display: block;

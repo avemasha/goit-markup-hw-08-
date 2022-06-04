@@ -14,5 +14,9 @@
   color: $main-background-color;
 }
 
-
-
+.footer .logo {
+  @media screen and (min-width: 1140px) {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}

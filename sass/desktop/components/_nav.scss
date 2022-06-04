@@ -1,9 +1,9 @@
-.nav-list__item {
-  @media screen and (min-width: 1140px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
+// .nav-list__item {
+// @media screen and (min-width: 1140px) {
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+// }
+// }
 .nav-list__link {
   @media screen and (min-width: 1140px) {
     position: relative;
@@ -28,49 +28,49 @@
   }
 }
 
-.site-nav {
-  display: flex;
-}
+// .site-nav {
+//   display: flex;
+// }
 
-.nav-list {
-  display: flex;
-}
+// .nav-list {
+//   display: flex;
+// }
 
-.nav-list__item + .nav-list__item {
-  margin-left: 50px;
-}
+// .nav-list__item + .nav-list__item {
+//   margin-left: 50px;
+// }
 
-.contacts-list__item + .contacts-list__item {
-  margin-left: 50px;
-}
+// .contacts-list__item + .contacts-list__item {
+//   margin-left: 50px;
+// }
 
-.nav-list__item {
-  padding-top: 32px;
-}
-.nav-list__item + .nav-list__item {
-  margin-left: 50px;
-}
+// .nav-list__item {
+//   padding-top: 32px;
+// }
+// .nav-list__item + .nav-list__item {
+//   margin-left: 50px;
+// }
 
-.nav-list__link,
-.section__title {
-  color: $title-text-color;
-}
-.nav-list__link {
-  @media screen and (min-width: 1140px) {
-    font-family: "Roboto", sans-serif;
+// .nav-list__link,
+// .section__title {
+//   color: $title-text-color;
+// }
+// .nav-list__link {
+//   @media screen and (min-width: 1140px) {
+//     font-family: "Roboto", sans-serif;
 
-    padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     padding-bottom: 32px;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.1;
+//     letter-spacing: 0.02em;
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-  }
-}
+//     &:hover,
+//     &:focus {
+//       color: $accent-color;
+//     }
+//   }
+// }

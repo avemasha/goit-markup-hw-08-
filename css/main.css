@@ -866,13 +866,46 @@ summary {
 
 .hero {
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-images/mobile-Headerimg-min.jpg");
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../images/hero-images/mobile-Headerimg@2x-min.jpg");
+  }
+}
+
+@media screen and (min-width: 489px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-images/Header-tablet-min.jpg");
+  }
+}
+
+@media screen and (min-width: 489px) and (min-device-pixel-ratio: 2), screen and (min-width: 489px) and (min-resolution: 192dpi), screen and (min-width: 489px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../images/hero-images/Header-tablet@2x-min.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/img.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../images/Img_hero@2x.jpg");
+  }
 }
 
 .hero__title {
@@ -1096,8 +1129,8 @@ summary {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    padding-bottom: 0;
-    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-top: 0;
   }
 }
 
@@ -1132,9 +1165,8 @@ summary {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    padding-bottom: 21px;
-    padding-top: 0px;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 21px;
   }
 }
 
@@ -1312,7 +1344,7 @@ summary {
 }
 
 .projects__image {
-  width: 450;
+  width: 450px;
   height: 294px;
 }
 
@@ -1656,13 +1688,6 @@ summary {
 @media screen and (min-width: 768px) {
   .features-list__item {
     width: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .features-list__item {
-    width: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
 }

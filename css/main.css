@@ -578,34 +578,6 @@ summary {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.features-list__title {
-  color: #212121;
-  margin-top: 30px;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.features-list__paragraph {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  margin-top: 10px;
-}
-
-@media screen and (min-width: 1140px) {
-  .features-list__background {
-    display: flex;
-    width: 270px;
-    height: 120px;
-    background: #f5f4fa;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 @media screen and (min-width: 1140px) {
   .projects {
     display: flex;
@@ -933,7 +905,6 @@ summary {
 @media screen and (min-width: 1200px) {
   .footer .logo {
     padding: 0;
-    margin-bottom: 20px;
   }
 }
 
@@ -1072,6 +1043,7 @@ summary {
   .contacts-list {
     margin-top: 0;
     margin-left: auto;
+    flex-direction: column;
   }
 }
 
@@ -1129,6 +1101,20 @@ summary {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .phone .contacts-list__link {
+    color: #757575;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    padding-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .mail .contacts-list__link {
   color: #757575;
   font-weight: 500;
@@ -1160,8 +1146,9 @@ summary {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    padding-bottom: 21px;
-    padding-top: 21px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    margin-top: 0;
   }
 }
 
@@ -1438,11 +1425,10 @@ summary {
   .members__card {
     width: 270px;
     padding-bottom: 0;
-    margin: 0;
+    margin-top: 0;
   }
   .members__card + .members__card {
     margin-left: 30px;
-    margin-top: 0px;
   }
 }
 
@@ -1649,7 +1635,7 @@ summary {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -1671,6 +1657,23 @@ summary {
   .features-list__item {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    width: 270px;
+    margin: 0;
+  }
+  .features-list__item + .features-list__item {
+    margin-left: 30px;
   }
 }
 
@@ -1705,7 +1708,7 @@ summary {
   width: 450px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .features-list__paragraph {
     width: 354px;
   }
@@ -1729,7 +1732,7 @@ summary {
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .features-list__background {
     width: 354px;
   }
@@ -1919,6 +1922,14 @@ summary {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+    padding: 0;
+  }
+}
+
 .js-speaker-form {
   display: flex;
   flex-direction: column;
@@ -1976,6 +1987,12 @@ summary {
 
 .form-list__input:hover.modal-icon, .form-list__input:focus.modal-icon {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-list__input {
+    min-width: 448px;
+  }
 }
 
 .icon-container {
@@ -2058,6 +2075,12 @@ summary {
   padding-left: 24px;
 }
 
+@media screen and (min-width: 1200px) {
+  .policy__label {
+    font-size: 14px;
+  }
+}
+
 .policy__icon {
   background-image: url(/images/pre-checked-icon-last.svg);
   width: 16px;
@@ -2120,6 +2143,7 @@ summary {
     display: flex;
     align-items: baseline;
     justify-content: start;
+    flex-direction: column;
   }
 }
 
@@ -2151,7 +2175,7 @@ summary {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .adress-list {
     margin-right: 0;
     margin-left: 0;
@@ -2162,7 +2186,6 @@ summary {
   .adress-list {
     text-align: start;
     min-width: 231px;
-    margin-top: 0;
   }
 }
 
@@ -2170,7 +2193,7 @@ summary {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .info {
     margin-left: 61px;
   }
@@ -2251,6 +2274,7 @@ summary {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: start;
   }
 }
 
@@ -2267,7 +2291,7 @@ summary {
   min-width: 146px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .join-container__title {
     margin-left: 0;
     margin-right: 0;

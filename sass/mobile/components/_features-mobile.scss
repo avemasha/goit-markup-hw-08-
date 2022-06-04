@@ -2,7 +2,7 @@
   background-color: $main-background-color;
 }
 .features-list {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -19,18 +19,18 @@
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
-  // @media screen and (min-width: 768px) {
-  //   width: calc((100% - 4 * 30px) / 4);
-  //   margin: 15px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   width: 270px;
-  //   margin: 0;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin: 0;
 
-  //   & + & {
-  //     margin-left: 30px;
-  //   }
-  // }
+    & + & {
+      margin-left: 30px;
+    }
+  }
 }
 
 .features-list__title {
@@ -61,7 +61,7 @@
   margin-top: 10px;
   width: 450px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     width: 354px;
   }
   @media screen and (min-width: 1200px) {
@@ -81,7 +81,7 @@
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     width: 354px;
   }
   @media screen and (min-width: 1200px) {

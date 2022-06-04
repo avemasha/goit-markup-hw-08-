@@ -52,4 +52,9 @@
     min-width: 450px;
     min-height: 609px;
   }
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+    padding: 0;
+  }
 }

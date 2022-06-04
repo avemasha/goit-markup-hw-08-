@@ -1,36 +1,36 @@
-// .features {
-//   background-color: $main-background-color;
+// // .features {
+// //   background-color: $main-background-color;
+// // }
+// // .features-list {
+// //   display: flex;
+// // }
+
+// .features-list__title {
+//   color: $title-text-color;
+//   margin-top: 30px;
+//   font-size: 14px;
+//   line-height: 1.1;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
 // }
-// .features-list {
-//   display: flex;
+
+// .features-list__paragraph {
+//   font-size: 14px;
+//   line-height: 1.7;
+//   letter-spacing: 0.03em;
+//   margin-top: 10px;
 // }
 
-.features-list__title {
-  color: $title-text-color;
-  margin-top: 30px;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+// .features-list__background {
+//   @media screen and (min-width: 1140px) {
+//     display: flex;
+//     width: 270px;
+//     height: 120px;
 
-.features-list__paragraph {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  margin-top: 10px;
-}
+//     background: $staff-background-color;
+//     border-radius: 4px;
+//     align-items: center;
 
-.features-list__background {
-  @media screen and (min-width: 1140px) {
-    display: flex;
-    width: 270px;
-    height: 120px;
-
-    background: $staff-background-color;
-    border-radius: 4px;
-    align-items: center;
-
-    justify-content: center;
-  }
-}
+//     justify-content: center;
+//   }
+// }

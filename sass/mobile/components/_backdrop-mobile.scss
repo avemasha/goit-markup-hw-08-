@@ -8,8 +8,11 @@
   background: rgba(0, 0, 0, 0.2);
   padding: 93px 15px 94px 15px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 208px 159px 207px 159px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 222px 537px 221px 537px;
   }
 
   &.is-hidden {

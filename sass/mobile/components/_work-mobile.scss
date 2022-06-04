@@ -1,14 +1,14 @@
 .occupation .section__title {
   display: none;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     display: block;
   }
 }
 .work-list {
   display: none;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }

@@ -8,11 +8,11 @@
   }
 }
 .nav-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     margin-left: 88px;
   }
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: 93px;
   }
@@ -39,16 +39,16 @@
     &:focus {
       color: $accent-color;
     }
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
       padding-bottom: 32px;
     }
   }
 }
 .nav-list__item {
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768) and (max-width: 1199px) {
     padding-top: 32px;
   }
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -62,11 +62,15 @@
 }
 
 .nav-list__link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     position: relative;
   }
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     position: relative;
   }
 }
@@ -101,12 +105,13 @@
   flex-direction: column-reverse;
   align-items: flex-start;
   margin-left: 84px;
+  margin-left: auto;
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-left: auto;
   }
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     margin-left: 305px;
     display: flex;
@@ -116,13 +121,11 @@
 }
 
 .contacts-list__item + .contacts-list__item {
-  margin-bottom: 32px;
-
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 30px;
   }
 }
@@ -141,7 +144,7 @@
   font-size: 34px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  margin-bottom: 10px;
+  padding-bottom: 0;
 
   @media screen and (min-width: 768px) {
     color: $primary-text-color;
@@ -161,6 +164,7 @@
   font-size: 24px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  padding-bottom: 0;
 
   @media screen and (min-width: 768px) {
     color: $primary-text-color;
@@ -170,13 +174,26 @@
     line-height: 1.1;
     letter-spacing: 0.02em;
     padding-bottom: 21px;
-    padding-top: 0;
+    padding-top: 0px;
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    color: $primary-text-color;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    padding-bottom: 21px;
+    padding-top: 21px;
   }
 }
 
 .source-links {
   display: flex;
   margin-top: 64px;
+  font-size: 18px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -186,7 +203,7 @@
   margin-left: 10px;
 }
 
-.source-links__item::before {
+.source-links__item + .source-links__item ::before {
   content: "";
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;

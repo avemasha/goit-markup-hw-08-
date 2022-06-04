@@ -31,12 +31,12 @@
   flex-basis: calc((100% - 3 * 8px) / 3);
   margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
   }
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
@@ -101,7 +101,7 @@
   &:hover {
     background-color: $button-hover;
   }
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 12px;
   }
 }

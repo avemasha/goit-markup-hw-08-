@@ -14,7 +14,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 24px;
+    // padding-bottom: 24px;
     // display: flex;
     // flex-wrap: wrap;
     width: calc((100% - 2 * 30px) / 2);
@@ -99,6 +99,13 @@
     text-align: center;
   }
 }
+
+.member-source_list {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+
 .member-source {
   display: flex;
   // margin-bottom: 30px;

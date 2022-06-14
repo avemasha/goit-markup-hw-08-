@@ -6,12 +6,15 @@
   padding-bottom: 60px;
 }
 .info {
+  text-align: center;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin-left: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -19,34 +22,44 @@
     align-items: baseline;
     justify-content: start;
     flex-direction: column;
+    margin-left: 0;
+    text-align: start;
   }
-}
-.tab-info {
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-  // @media screen and (min-width: 1200px) {
-  //   display: block;
-  // }
 }
 
-.footer-container {
+.footer__container {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: baseline;
     flex-direction: row;
+    align-items: baseline;
   }
 }
-
+.contacts-footer {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
 .adress-list {
-  margin-left: 109px;
-  margin-right: 109px;
   margin-top: 20px;
-  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    margin-left: 109px;
+    margin-right: 109px;
+    margin-top: 20px;
+    text-align: center;
+  }
 
   @media screen and (min-width: 768px) {
     margin-right: 0;
@@ -59,16 +72,16 @@
   }
 }
 
-.info {
-  text-align: center;
-  @media screen and (min-width: 768px) {
-    margin-left: 61px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 0;
-    text-align: start;
-  }
-}
+// .info {
+//   text-align: center;
+//   @media screen and (min-width: 768px) {
+//     margin-left: 61px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     margin-left: 0;
+//     text-align: start;
+//   }
+// }
 
 .adress-list__map {
   color: $main-background-color;
@@ -103,11 +116,11 @@
 }
 
 .tab-join {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  // }
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
@@ -117,6 +130,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 165px;
   }

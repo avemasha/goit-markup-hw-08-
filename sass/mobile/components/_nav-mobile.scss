@@ -3,12 +3,12 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
   }
 }
 .nav-list {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 88px;
   }
@@ -23,39 +23,35 @@
   font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 768px) {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 
   @media screen and (min-width: 768px) {
-    color: $title-text-color;
     font-weight: 500;
-    font-size: 12px;
+
     line-height: 1.1;
     letter-spacing: 0.02em;
 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 14px;
+    position: relative;
     padding-bottom: 32px;
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-    @media screen and (min-width: 1200px) {
-      padding-bottom: 32px;
-    }
-  }
-}
-.nav-list__item {
-  @media screen and (min-width: 768) and (max-width: 1199px) {
     padding-top: 32px;
   }
+
   @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+  }
+}
+
+.nav-list__item {
+  @media screen and (min-width: 768px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -68,19 +64,20 @@
   }
 }
 
-.nav-list__link {
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    position: relative;
-  }
-  @media screen and (min-width: 1200px) {
-    position: relative;
-  }
-}
+// .nav-list__link {
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+//   @media screen and (min-width: 768px) {
+//     font-size: 14px;
+//     position: relative;
+//     padding-bottom: 32px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     position: relative;
+//   }
+// }
 
 .nav-list__link.current {
   color: $accent-color;
@@ -88,7 +85,7 @@
   &::after {
     display: none;
     content: "";
-
+    display: block;
     position: absolute;
     width: 100%;
     left: 0;
@@ -219,6 +216,7 @@
     padding-bottom: 32px;
     padding-top: 32px;
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
 

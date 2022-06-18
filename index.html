@@ -154,7 +154,17 @@
             <h2 class="section__title ">Чем мы занимаемся</h2>
             <ul class="work-list list">
                 <li class="work-list__item"><div class="work-list__overlay">
-                    <img width="370" height="294" srcset="images/photo1_1.jpg 1x, images/photo1_1-2x.jpg 2x" src="images/photo1_1.jpg" alt="hands typing with iPad" class="work-list__image">
+                    <picture>
+                        <source  srcset="images/photo1_1.jpg 1x, images/photo1_1-2x.jpg 2x"
+                        media="(min-width:1200px)"
+                        >
+        <img width="370" height="294"  src="images/photo1_1.jpg"
+            alt="hands typing with iPad" class="work-list__image">
+                       
+
+                   
+                    </picture>
+                    
                     <div class="work-list__backdrop">
 
                         <p class="work-list__overlay-paragraph">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
@@ -163,7 +173,11 @@
                     </div>
                 </li>
                 <li class="work-list__item"> <div class="work-list__overlay">
-                    <img width="370" height="294" srcset="images/photo1-2.jpg 1x, images/photo1-2-2x.jpg 2x"  src="images/photo1-2.jpg" alt="labtop searching" class="work-list__image">
+                    <picture>
+                        <source srcset="images/photo1-2.jpg 1x, images/photo1-2-2x.jpg 2x" media="(min-width:1200px)">
+                        <img width="370" height="294" src="images/photo1_2.jpg" alt="hands typing with iPad" class="work-list__image">
+                    </picture>
+
                     <div class="work-list__backdrop">
                         <p class="work-list__overlay-paragraph">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
 
@@ -171,7 +185,11 @@
                 </div>
                 </li>
                 <li class="work-list__item"><div class="work-list__overlay">
-                    <img width="370" height="294" src="images/photo1_3.jpg" alt="color palette on the phone" class="work-list__image">
+                    <picture>
+                        <source srcset="images/photo1-3.jpg 1x, images/photo1-3-2x.jpg 2x" media="(min-width:1200px)">
+                        <img width="370" height="294" src="images/photo1_3.jpg" alt="hands typing with iPad" class="work-list__image">
+                    </picture>
+                   
                     <div class="work-list__backdrop">
                         <p class="work-list__overlay-paragraph">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ </p>
                         
@@ -187,7 +205,22 @@
             <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="members list">
-                <li class="members__card"><img class="members__image" width="270" height="260" srcset="images/img_1-member.jpg 1x, images/img_1-member-2x.jpg 2x"  alt="Igor Demyanenko">
+               
+                <li class="members__card">
+                    <picture>
+                        <source srcset="images/img_1-member.jpg 1x, images/img_1-member-2x.jpg 2x" media="(min-width:1200px)">
+                    
+                        <source srcset="images/img_tab-1-member-min.jpg 1x, images/img_tab-1-member-2x-min.jpg 2x"
+                            media="(min-width:768px)">
+                    
+                        <source srcset="images/img_mobile-1-member-min.jpg 1x, images/img_mobile-1-member-2x-min.jpg 2x"
+                            media="(min-width:480px)">
+                    
+                        <img class="members__image" width="270" height="260"
+                            srcset="images/img_1-member.jpg 1x, images/img_1-member-2x.jpg 2x" alt="Igor Demyanenko">
+                    
+                    
+                    </picture>
                     <div class="members__info">
                     <h3 class="members__name">Игорь Демьяненко</h3>
                     <p class="members__position">Product Designer</p>
@@ -205,7 +238,18 @@
                     </div>
                 </li>
 
-                <li class="members__card"><img class="members__image" width="270" height="260" srcset="images/img2_2(1).jpg 1x, images/img_olga@2x-min.jpg  2x" src="images/img2_2(1).jpg" alt="Olga Repina">
+                <li class="members__card">
+                    <picture>
+                        <source srcset="images/img_2-member.jpg 1x, images/img_2-member-2x.jpg 2x" media="(min-width:1200px)">
+                    
+                        <source srcset="images/img_tab-2-member-min.jpg 1x, images/img_tab-2-member-2x-min.jpg 2x"
+                            media="(min-width:768px)">
+                    
+                        <source srcset="images/img_mobile-2-member-min.jpg 1x, images/img_mobile-2-member-2x-min.jpg 2x"
+                            media="(min-width:480px)">
+                            <img class="members__image" width="270" height="260" 
+                                src="images/img_2-member.jpg" alt="Olga Repina">
+                    </picture>
                     <div class="members__info">
                     <h3 class="members__name">Ольга Репина</h3>
                     <p class="members__position"> Frontend Developer</p>
@@ -221,7 +265,18 @@
                     </ul>
                     </div>
                 </li>
-                <li class="members__card"><img class="members__image" width="270" height="260" srcset="images/img2_3(1).jpg 1x, images/img_nikolai@2x-min.jpg 2x" src="images/img2_3(1).jpg" alt="Nikolai Tarasov">
+                <li class="members__card">
+                    <picture>
+                        <source srcset="images/img_3-member.jpg 1x, images/img_3-member-2x.jpg 2x" media="(min-width:1200px)">
+                    
+                        <source srcset="images/img_tab-3-member-min.jpg 1x, images/img_tab-3-member-2x-min.jpg 2x"
+                            media="(min-width:768px)">
+                    
+                        <source srcset="images/img_mobile-3-member-min.jpg 1x, images/img_mobile-3-member-2x-min.jpg 2x"
+                            media="(min-width:480px)">
+                        <img class="members__image" width="270" height="260" src="images/img_3-member.jpg" alt="Nikolai Tarasov">
+                    </picture>
+           
                     <div class="members__info">
                     <h3 class="members__name">Николай Тарасов</h3>
                     <p class="members__position">Marketing</p>
@@ -241,7 +296,18 @@
                     </ul>
                     </div>
                 </li>
-                <li class="members__card"><img class="members__image" width="270" height="260" srcset="images/img2-4(1).jpg 1x, images/img_mychail@2x-min.jpg 2x"  src="images/img2-4(1).jpg" alt="Myhail Yermakov">
+                <li class="members__card">
+                    <picture>
+                        <source srcset="images/img_4-member.jpg 1x, images/img_4-member-2x.jpg 2x" media="(min-width:1200px)">
+                    
+                        <source srcset="images/img_tab-4-member-min.jpg 1x, images/img_tab-4-member-2x-min.jpg 2x"
+                            media="(min-width:768px)">
+                    
+                        <source srcset="images/img_mobile-4-member-min.jpg 1x, images/img_mobile-4-member-2x-min.jpg 2x"
+                            media="(min-width:480px)">
+                        <img class="members__image" width="270" height="260" src="images/img_4-member.jpg" alt="Myhail Yermakov">
+                    </picture>
+
                     <div class="members__info">
                     <h3 class="members__name">Михаил Ермаков</h3>
                     <p class="members__position">UI Designer</p>

@@ -12,9 +12,13 @@
   width: 100%;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -579,13 +583,21 @@ summary {
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
+  text-align: center;
+  align-items: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  text-align: center;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 480px) {
+  .hero {
+    margin: 0 auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .hero {
     background-color: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.jpg");
@@ -610,13 +622,13 @@ summary {
   }
 }
 
-@media screen and (min-width: 489px) {
+@media screen and (min-width: 480px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-images/Header-tablet-min.jpg");
   }
 }
 
-@media screen and (min-width: 489px) and (min-device-pixel-ratio: 2), screen and (min-width: 489px) and (min-resolution: 192dpi), screen and (min-width: 489px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero-images/Header-tablet@2x-min.jpg");
   }
@@ -654,7 +666,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     color: #ffffff;
     margin-bottom: 30px;
@@ -747,17 +759,6 @@ summary {
     line-height: 1.1;
     letter-spacing: 0.02em;
     font-size: 14px;
-    position: relative;
-    padding-bottom: 32px;
-    padding-top: 32px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .nav-list__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    position: relative;
   }
 }
 
@@ -765,6 +766,7 @@ summary {
   .nav-list__item {
     padding-top: 32px;
     padding-bottom: 32px;
+    position: relative;
   }
 }
 
@@ -817,6 +819,7 @@ summary {
     margin-top: 0;
     margin-left: auto;
     flex-direction: column;
+    position: relative;
   }
 }
 
@@ -1563,6 +1566,7 @@ summary {
 
 .features-list__background {
   display: flex;
+  width: 300pxq;
   height: 120px;
   left: 15px;
   top: 520px;

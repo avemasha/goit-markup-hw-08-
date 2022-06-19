@@ -3,15 +3,21 @@
 
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+  align-items: center;
 
-  margin: 0 auto;
   padding-top: 118px;
 
   padding-bottom: 118px;
 
-  text-align: center;
+  @media screen and (min-width: 480px) {
+    margin: 0 auto;
+    padding-top: 118px;
 
-  @media screen and (min-width: 1140px) {
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
     background-color: $hero-footer-background-color;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -57,7 +63,7 @@
   // }
 }
 
-@media screen and (min-width: 489px) {
+@media screen and (min-width: 480px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -112,7 +118,7 @@
 }
 
 .hero__title {
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     color: $main-background-color;
     margin-bottom: 30px;
     font-size: 44px;

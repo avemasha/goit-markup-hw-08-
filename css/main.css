@@ -807,7 +807,7 @@ summary {
 }
 
 .contacts-list {
-  margin-top: 302px;
+  margin-top: auto;
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
@@ -861,9 +861,12 @@ summary {
   line-height: 1.1;
   letter-spacing: 0.02em;
   padding-bottom: 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.phone .contacts-list__link:hover {
+.phone .contacts-list__link:hover, .phone .contacts-list__link:focus {
   color: #2196f3;
 }
 
@@ -892,14 +895,12 @@ summary {
     padding-bottom: 0;
     padding-top: 32px;
     padding-bottom: 32px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 .mail .contacts-list__link {
   display: flex;
+  align-items: center;
   color: #757575;
   font-weight: 500;
   font-size: 24px;
@@ -907,6 +908,13 @@ summary {
   letter-spacing: 0.02em;
   padding-bottom: 0;
   padding-top: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail .contacts-list__link:hover, .mail .contacts-list__link:focus {
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -939,7 +947,7 @@ summary {
 
 .source-links {
   display: flex;
-  padding-top: 64px;
+  margin-top: 64px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1212,7 +1220,6 @@ summary {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 
 .members__card + .members__card {
@@ -1238,6 +1245,11 @@ summary {
   .members__card + .members__card {
     margin-left: 30px;
   }
+}
+
+.members__info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1275,7 +1287,6 @@ summary {
 }
 
 .members__name {
-  margin-top: 30px;
   text-align: center;
   min-width: 137px;
 }
@@ -1331,7 +1342,6 @@ summary {
 @media screen and (min-width: 1200px) {
   .member-source {
     display: flex;
-    margin-bottom: 30px;
     margin-top: 16px;
     justify-content: center;
   }
